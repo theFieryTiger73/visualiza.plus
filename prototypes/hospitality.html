@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="HOSPITALITY SYSTEM — VISUALIZA+">HOSPITALITY SYSTEM — VISUALIZA+</title>
+<meta name="description" content="Visualiza+ — hospitality digital system: booking website, business email, guest management and WhatsApp concierge.">
+<meta name="theme-color" content="#060606">
+<link rel="icon" href="../data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23D8FF3D'/%3E%3Cpath d='M8 24 L24 8 M16 8 L16 24' stroke='%23060606' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="no-js">
+
+<script>document.documentElement.classList.add('js');document.body.classList.remove('no-js');</script>
+
+<!-- ============ LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-grid">
+    <div class="loader-monobrand">VISUALIZA+</div>
+    <div class="loader-line"><div class="loader-line-fill" id="loaderFill"></div></div>
+    <div class="loader-meta">
+      <span>BOOTING DIGITAL INFRASTRUCTURE</span>
+      <span id="loaderPct">00%</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav-brand" href="../index.html#top" data-hover>
+    <span class="nav-brand-plus">+</span>
+    <span class="nav-brand-text">VISUALIZA<span class="acid">+</span></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="../index.html#intro" data-hover><span data-i18n="INTRO">INTRO</span></a>
+    <a href="../index.html#services" data-hover><span data-i18n="SERVICES">SERVICES</span></a>
+    <a href="../index.html#solutions" data-hover><span data-i18n="SOLUTIONS">SOLUTIONS</span></a>
+    <a href="../index.html#process" data-hover><span data-i18n="PROCESS">PROCESS</span></a>
+  </nav>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+    <button type="button" class="lang-btn" data-lang="pt">PT</button>
+  </div>
+  <button type="button" class="nav-cta" data-open-modal data-hover><span data-i18n="START A PROJECT">START A PROJECT</span> <span class="arr">→</span></button>
+</header>
+
+<main id="top">
+
+  <!-- ============ PROTOTYPE HERO ============ -->
+  <section class="proto-hero">
+    <div class="proto-hero-bg" aria-hidden="true">02</div>
+    <div class="proto-meta reveal">
+      <span class="dot">●</span>
+      <span data-i18n="SYSTEM 02 / HOSPITALITY">SYSTEM 02 / HOSPITALITY</span>
+      <span>// <span data-i18n="STATUS — ONLINE">STATUS — ONLINE</span></span>
+    </div>
+    <h1 class="proto-title reveal" data-d="100" data-i18n-html="HOSPITALITY SYSTEM">
+      HOSPITALITY <em>SYSTEM</em>
+    </h1>
+    <p class="proto-desc reveal" data-d="200" data-i18n="Rooms, bookings, guests and business email — one system that keeps every reservation in line.">Rooms, bookings, guests and business email — one system that keeps every reservation in line.</p>
+    <div class="proto-actions reveal" data-d="300">
+      <button type="button" class="btn btn-primary" data-open-modal data-hover>BUILD THIS SYSTEM <span class="arr">→</span></button>
+      <a class="btn btn-ghost" href="../index.html#solutions" data-hover><span data-i18n="← BACK TO HOME">← BACK TO HOME</span></a>
+    </div>
+  </section>
+
+  <!-- ============ MODULES ============ -->
+  <section class="proto-section">
+    <div class="proto-section-head reveal">
+      <h2 class="proto-section-title" data-i18n="SYSTEM MODULES">SYSTEM MODULES</h2>
+      <span class="proto-section-index mono">( 05 )</span>
+    </div>
+    <div class="proto-stack">
+      <div class="proto-row reveal" data-hover>
+        <span class="proto-row-num">01</span>
+        <h3 class="proto-row-name" data-i18n="BOOKING WEBSITE">BOOKING WEBSITE</h3>
+        <p class="proto-row-desc" data-i18n="Rooms with live availability and a booking form that lands in your inbox.">Rooms with live availability and a booking form that lands in your inbox.</p>
+      </div>
+      <div class="proto-row reveal" data-hover>
+        <span class="proto-row-num">02</span>
+        <h3 class="proto-row-name" data-i18n="BUSINESS EMAIL">BUSINESS EMAIL</h3>
+        <p class="proto-row-desc" data-i18n="@yourlodge email for every confirmation and guest conversation.">@yourlodge email for every confirmation and guest conversation.</p>
+      </div>
+      <div class="proto-row reveal" data-hover>
+        <span class="proto-row-num">03</span>
+        <h3 class="proto-row-name" data-i18n="GUEST MANAGEMENT">GUEST MANAGEMENT</h3>
+        <p class="proto-row-desc" data-i18n="Check-ins, extras and guest history in one place.">Check-ins, extras and guest history in one place.</p>
+      </div>
+      <div class="proto-row reveal" data-hover>
+        <span class="proto-row-num">04</span>
+        <h3 class="proto-row-name" data-i18n="WHATSAPP CONCIERGE">WHATSAPP CONCIERGE</h3>
+        <p class="proto-row-desc" data-i18n="Guests reach you where they already talk.">Guests reach you where they already talk.</p>
+      </div>
+      <div class="proto-row reveal" data-hover>
+        <span class="proto-row-num">05</span>
+        <h3 class="proto-row-name" data-i18n="AUTOMATION">AUTOMATION</h3>
+        <p class="proto-row-desc" data-i18n="Confirmations and reminders sent automatically.">Confirmations and reminders sent automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIVE VIEW ============ -->
+  <section class="proto-section" style="padding-top:0">
+    <div class="proto-section-head reveal">
+      <h2 class="proto-section-title" data-i18n="LIVE VIEW">LIVE VIEW</h2>
+      <span class="proto-section-index mono" data-i18n="REFRESHED 12 SEC AGO">REFRESHED 12 SEC AGO</span>
+    </div>
+    <div class="proto-dash reveal">
+      <div class="proto-dash-bar mono">
+        <span>VISUALIZA+ <span class="led">// DASHBOARD</span></span>
+        <span class="led">● ONLINE</span>
+      </div>
+      <div class="proto-kpis">
+        <div class="proto-kpi">
+          <div class="proto-kpi-label" data-i18n="ROOMS">ROOMS</div>
+          <div class="proto-kpi-value">12</div>
+        </div>
+        <div class="proto-kpi">
+          <div class="proto-kpi-label" data-i18n="RESERVATIONS">RESERVATIONS</div>
+          <div class="proto-kpi-value">+18</div>
+        </div>
+        <div class="proto-kpi">
+          <div class="proto-kpi-label" data-i18n="GUESTS">GUESTS</div>
+          <div class="proto-kpi-value">41</div>
+        </div>
+        <div class="proto-kpi">
+          <div class="proto-kpi-label" data-i18n="OCCUPANCY">OCCUPANCY</div>
+          <div class="proto-kpi-value">86<span class="proto-kpi-unit">%</span></div>
+        </div>
+      </div>
+      <div class="proto-table">
+        <div class="proto-table-row">
+          <span class="proto-table-name">ROOM 201 <small>// DOUBLE — OCEAN VIEW</small></span>
+          <span class="proto-table-val" data-i18n="BOOKED">BOOKED</span>
+        </div>
+        <div class="proto-table-row">
+          <span class="proto-table-name">ROOM 104 <small>// SINGLE — GARDEN</small></span>
+          <span class="proto-table-val" data-i18n="PENDING">PENDING</span>
+        </div>
+        <div class="proto-table-row">
+          <span class="proto-table-name">ROOM 305 <small>// SUITE — TERRACE</small></span>
+          <span class="proto-table-val" data-i18n="CHECKED IN">CHECKED IN</span>
+        </div>
+        <div class="proto-table-row">
+          <span class="proto-table-name">ROOM 102 <small>// DOUBLE — GARDEN</small></span>
+          <span class="proto-table-val" data-i18n="CONFIRMED">CONFIRMED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROTOTYPE CTA ============ -->
+  <section class="proto-cta">
+    <h3 class="reveal">FULL HOUSE, <em data-i18n="ZERO STRESS.">ZERO STRESS.</em></h3>
+    <div class="proto-actions reveal" data-d="100" style="justify-content:center">
+      <button type="button" class="btn btn-primary" data-open-modal data-hover>BUILD THIS SYSTEM <span class="arr">→</span></button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FLOATING CTA ============ -->
+<button type="button" class="floating-cta" data-open-modal aria-label="Get in touch">
+  <span data-i18n="GET IN TOUCH">GET IN TOUCH</span> <i>→</i>
+</button>
+
+<!-- ============ GET IN TOUCH MODAL ============ -->
+<div class="modal-wrap" id="modalWrap" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Get in touch">
+    <button type="button" class="modal-close" data-close-modal aria-label="Close">✕</button>
+    <div class="modal-meta mono">// VISUALIZA+ — <span data-i18n="PROJECT INTAKE">PROJECT INTAKE</span></div>
+    <h3 class="modal-title" data-i18n="GET IN TOUCH">GET IN TOUCH</h3>
+    <p class="modal-sub" data-i18n="Tell us what you need. We reply on WhatsApp within 24 hours.">Tell us what you need. We reply on WhatsApp within 24 hours.</p>
+
+    <form class="modal-form" id="contactForm" novalidate>
+      <div class="field">
+        <label class="field-label" for="fType" data-i18n="PROJECT TYPE">PROJECT TYPE</label>
+        <select id="fType" name="type">
+          <option value="Website" data-i18n="WEBSITE">WEBSITE</option>
+          <option value="Business email" data-i18n="BUSINESS EMAIL">BUSINESS EMAIL</option>
+          <option value="Landing page" data-i18n="LANDING PAGE">LANDING PAGE</option>
+          <option value="Automation" data-i18n="AUTOMATION">AUTOMATION</option>
+          <option value="CRM / System" data-i18n="CRM / SYSTEM">CRM / SYSTEM</option>
+          <option value="Full digital system" data-i18n="FULL DIGITAL SYSTEM">FULL DIGITAL SYSTEM</option>
+          <option value="Something else" data-i18n="SOMETHING ELSE">SOMETHING ELSE</option>
+        </select>
+      </div>
+      <div class="field">
+        <label class="field-label" for="fName" data-i18n="YOUR NAME">YOUR NAME</label>
+        <input type="text" id="fName" name="name" autocomplete="name" placeholder="Full name" data-i18n-attr="placeholder|Full name">
+      </div>
+      <div class="field">
+        <label class="field-label" for="fEmail" data-i18n="EMAIL">EMAIL</label>
+        <input type="email" id="fEmail" name="email" autocomplete="email" placeholder="you@company.com" data-i18n-attr="placeholder|you@company.com">
+      </div>
+      <div class="field">
+        <label class="field-label" for="fWhats" data-i18n="WHATSAPP">WHATSAPP</label>
+        <input type="tel" id="fWhats" name="whatsapp" autocomplete="tel" placeholder="+258 …" data-i18n-attr="placeholder|+258 …">
+      </div>
+      <div class="field">
+        <label class="field-label" for="fDetails" data-i18n="PROJECT DETAILS">PROJECT DETAILS</label>
+        <textarea id="fDetails" name="details" rows="3" placeholder="A few lines about your project…" data-i18n-attr="placeholder|A few lines about your project…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary modal-submit">
+        <span data-i18n="SEND VIA WHATSAPP">SEND VIA WHATSAPP</span> <span class="arr">→</span>
+      </button>
+      <button type="button" class="btn btn-ghost modal-submit" id="sendEmailBtn">
+        <span data-i18n="SEND VIA EMAIL">SEND VIA EMAIL</span> <span class="arr">→</span>
+      </button>
+      <p class="modal-note mono" data-i18n="WHATSAPP +258 87 977 1024">WHATSAPP +258 87 977 1024</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="footer-brand reveal">
+    <span class="footer-plus">+</span>
+    <span class="footer-word">VISUALIZA<span class="acid">+</span></span>
+  </div>
+  <p class="footer-tagline reveal" data-i18n="Your business, built for digital.">Your business, built for digital.</p>
+
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4 class="mono" data-i18n="MENU">MENU</h4>
+      <a href="../index.html#solutions" data-hover><span data-i18n="SOLUTIONS">SOLUTIONS</span></a>
+      <a href="../index.html#services" data-hover><span data-i18n="WORK">WORK</span></a>
+      <a href="../index.html#intro" data-hover><span data-i18n="ABOUT">ABOUT</span></a>
+      <button type="button" data-open-modal data-hover><span data-i18n="CONTACT">CONTACT</span></button>
+    </div>
+    <div class="footer-col">
+      <h4 class="mono" data-i18n="SYSTEMS">SYSTEMS</h4>
+      <a href="real-estate.html" data-hover><span data-i18n="REAL ESTATE">REAL ESTATE</span></a>
+      <a href="hospitality.html" data-hover><span data-i18n="HOSPITALITY">HOSPITALITY</span></a>
+      <a href="clinics.html" data-hover><span data-i18n="CLINICS">CLINICS</span></a>
+      <a href="professional-services.html" data-hover><span data-i18n="PROFESSIONAL SERVICES">PROFESSIONAL SERVICES</span></a>
+    </div>
+    <div class="footer-col">
+      <h4 class="mono" data-i18n="CONTACT">CONTACT</h4>
+      <a href="mailto:hello@visualiza.plus" data-hover>HELLO@VISUALIZA.PLUS</a>
+      <a href="https://wa.me/+258879771024" data-hover target="_blank" rel="noopener">WHATSAPP</a>
+      <span class="mono dim">© 2026 VISUALIZA+</span>
+    </div>
+  </div>
+
+  <div class="footer-base">
+    <span class="mono">VISUALIZA+ — <span data-i18n="DIGITAL INFRASTRUCTURE">DIGITAL INFRASTRUCTURE</span></span>
+    <a class="mono" href="#top" data-hover><span data-i18n="BACK TO TOP">BACK TO TOP</span> ↑</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

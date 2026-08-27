@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VISUALIZA+ — Your business, built for digital.</title>
-<meta name="description" content="Visualiza+ builds digital infrastructure for businesses — websites, domains, business email, landing pages, automation, CRM and custom digital systems.">
+<title data-i18n="VISUALIZA+ — Your business, built for digital.">VISUALIZA+ — Your business, built for digital.</title>
+<meta name="description" content="Visualiza+ builds digital infrastructure for businesses — websites, domains, business email, landing pages, automation, CRM and custom digital systems." data-i18n-attr="content|Visualiza+ builds digital infrastructure for businesses — websites, domains, business email, landing pages, automation, CRM and custom digital systems.">
 <meta name="theme-color" content="#060606">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23D8FF3D'/%3E%3Cpath d='M8 24 L24 8 M16 8 L16 24' stroke='%23060606' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,12 +42,16 @@
     <span class="nav-brand-text">VISUALIZA<span class="acid">+</span></span>
   </a>
   <nav class="nav-links" aria-label="Primary">
-    <a href="#intro" data-hover>INTRO</a>
-    <a href="#services" data-hover>SERVICES</a>
-    <a href="#solutions" data-hover>SOLUTIONS</a>
-    <a href="#process" data-hover>PROCESS</a>
+    <a href="#intro" data-hover><span data-i18n="INTRO">INTRO</span></a>
+    <a href="#services" data-hover><span data-i18n="SERVICES">SERVICES</span></a>
+    <a href="#solutions" data-hover><span data-i18n="SOLUTIONS">SOLUTIONS</span></a>
+    <a href="#process" data-hover><span data-i18n="PROCESS">PROCESS</span></a>
   </nav>
-  <a class="nav-cta" href="#cta" data-hover>START A PROJECT <span class="arr">→</span></a>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+    <button type="button" class="lang-btn" data-lang="pt">PT</button>
+  </div>
+  <button type="button" class="nav-cta" data-open-modal data-hover><span data-i18n="START A PROJECT">START A PROJECT</span> <span class="arr">→</span></button>
 </header>
 
 <main id="top">
@@ -55,58 +59,58 @@
   <!-- ============ HERO ============ -->
   <section class="hero" id="hero">
     <div class="hero-meta reveal" data-d="0">
-      <span>VISUALIZA+ — DIGITAL SOLUTIONS</span>
+      <span data-i18n="VISUALIZA+ — DIGITAL SOLUTIONS">VISUALIZA+ — DIGITAL SOLUTIONS</span>
       <span class="mono">// POST-SOCIAL WEB</span>
       <span class="mono">( 2026 )</span>
     </div>
 
     <h1 class="hero-title">
-      <span class="line-wrap"><span class="js-lines" data-d="200">YOUR BUSINESS,</span></span>
-      <span class="line-wrap"><span class="js-lines" data-d="340">BUILT FOR <em>DIGITAL</em><span class="blink">▊</span></span></span>
+      <span class="line-wrap"><span class="js-lines" data-d="200" data-fit data-i18n="YOUR BUSINESS,">YOUR BUSINESS,</span></span>
+      <span class="line-wrap"><span class="js-lines" data-d="340" data-fit><span data-i18n="BUILT FOR">BUILT FOR</span> <em>DIGITAL</em><span class="blink">▊</span></span></span>
     </h1>
 
     <div class="hero-foot">
-      <p class="hero-sub reveal" data-d="600">Websites, business email, automation and digital systems — built around your business.</p>
-      <a class="btn btn-primary reveal" data-d="750" href="#cta" data-hover>
+      <p class="hero-sub reveal" data-d="600" data-i18n="Websites, business email, automation and digital systems — built around your business.">Websites, business email, automation and digital systems — built around your business.</p>
+      <button type="button" class="btn btn-primary reveal" data-d="750" data-open-modal data-hover>
         START A PROJECT <span class="arr">→</span>
-      </a>
+      </button>
     </div>
 
     <!-- PIPELINE -->
     <div class="pipeline reveal" data-d="850" id="pipeline">
-      <div class="pipeline-label mono">// IDEA → SYSTEM — YOUR BUSINESS ON THE LINE</div>
+      <div class="pipeline-label mono" data-i18n="// IDEA → SYSTEM — YOUR BUSINESS ON THE LINE">// IDEA → SYSTEM — YOUR BUSINESS ON THE LINE</div>
       <div class="pipeline-track">
         <div class="pulse" aria-hidden="true"></div>
         <div class="node" style="--i:0">
           <span class="node-box"></span>
           <span class="node-name">IDEA</span>
-          <span class="node-sub">concept</span>
+          <span class="node-sub" data-i18n="concept">concept</span>
         </div>
         <div class="node" style="--i:1">
           <span class="node-box"></span>
-          <span class="node-name">WEBSITE</span>
-          <span class="node-sub">presence</span>
+          <span class="node-name" data-i18n="WEBSITE">WEBSITE</span>
+          <span class="node-sub" data-i18n="presence">presence</span>
         </div>
         <div class="node" style="--i:2">
           <span class="node-box"></span>
-          <span class="node-name">CONNECTION</span>
-          <span class="node-sub">leads in</span>
+          <span class="node-name" data-i18n="CONNECTION">CONNECTION</span>
+          <span class="node-sub" data-i18n="leads in">leads in</span>
         </div>
         <div class="node" style="--i:3">
           <span class="node-box"></span>
-          <span class="node-name">AUTOMATION</span>
-          <span class="node-sub">follow-up</span>
+          <span class="node-name" data-i18n="AUTOMATION">AUTOMATION</span>
+          <span class="node-sub" data-i18n="follow-up">follow-up</span>
         </div>
         <div class="node" style="--i:4">
           <span class="node-box"></span>
-          <span class="node-name">SYSTEM</span>
-          <span class="node-sub">one engine</span>
+          <span class="node-name" data-i18n="SYSTEM">SYSTEM</span>
+          <span class="node-sub" data-i18n="one engine">one engine</span>
         </div>
       </div>
     </div>
 
     <div class="hero-scroll mono reveal" data-d="950">
-      <span>SCROLL</span>
+      <span data-i18n="SCROLL">SCROLL</span>
       <span class="hero-scroll-line"></span>
     </div>
   </section>
@@ -114,96 +118,96 @@
   <!-- ============ MARQUEE ============ -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>WEBSITES</span><i>✦</i>
-      <span>BUSINESS EMAIL</span><i>✦</i>
-      <span>LANDING PAGES</span><i>✦</i>
-      <span>AUTOMATION</span><i>✦</i>
-      <span>CRM &amp; SYSTEMS</span><i>✦</i>
-      <span>DIGITAL INFRASTRUCTURE</span><i>✦</i>
-      <span>WEBSITES</span><i>✦</i>
-      <span>BUSINESS EMAIL</span><i>✦</i>
-      <span>LANDING PAGES</span><i>✦</i>
-      <span>AUTOMATION</span><i>✦</i>
-      <span>CRM &amp; SYSTEMS</span><i>✦</i>
-      <span>DIGITAL INFRASTRUCTURE</span><i>✦</i>
+      <span data-i18n="WEBSITES">WEBSITES</span><i>✦</i>
+      <span data-i18n="BUSINESS EMAIL">BUSINESS EMAIL</span><i>✦</i>
+      <span data-i18n="LANDING PAGES">LANDING PAGES</span><i>✦</i>
+      <span data-i18n="AUTOMATION">AUTOMATION</span><i>✦</i>
+      <span data-i18n="CRM & SYSTEMS">CRM &amp; SYSTEMS</span><i>✦</i>
+      <span data-i18n="DIGITAL INFRASTRUCTURE">DIGITAL INFRASTRUCTURE</span><i>✦</i>
+      <span data-i18n="WEBSITES">WEBSITES</span><i>✦</i>
+      <span data-i18n="BUSINESS EMAIL">BUSINESS EMAIL</span><i>✦</i>
+      <span data-i18n="LANDING PAGES">LANDING PAGES</span><i>✦</i>
+      <span data-i18n="AUTOMATION">AUTOMATION</span><i>✦</i>
+      <span data-i18n="CRM & SYSTEMS">CRM &amp; SYSTEMS</span><i>✦</i>
+      <span data-i18n="DIGITAL INFRASTRUCTURE">DIGITAL INFRASTRUCTURE</span><i>✦</i>
     </div>
   </div>
 
   <!-- ============ INTRO ============ -->
   <section class="intro section" id="intro">
     <div class="sec-meta reveal">
-      <span class="mono">01 / INTRO</span>
-      <span class="mono">( THE PROBLEM )</span>
+      <span class="mono">01 / <span data-i18n="INTRO">INTRO</span></span>
+      <span class="mono">( <span data-i18n="THE PROBLEM">THE PROBLEM</span> )</span>
     </div>
 
     <h2 class="intro-title">
-      <span class="line-wrap"><span class="js-lines">YOUR BUSINESS</span></span>
-      <span class="line-wrap"><span class="js-lines" data-d="140"><em>IS ONLINE.</em></span></span>
+      <span class="line-wrap"><span class="js-lines" data-fit data-i18n="YOUR BUSINESS">YOUR BUSINESS</span></span>
+      <span class="line-wrap"><span class="js-lines" data-d="140" data-fit><em data-i18n="IS ONLINE.">IS ONLINE.</em></span></span>
     </h2>
 
     <div class="intro-kicker reveal">
       <span class="intro-arrow">↳</span>
-      <p>BUT IS IT <span class="strike">BUILT FOR DIGITAL?</span> <span class="acid mono">NO.</span></p>
+      <p><span data-i18n="BUT IS IT">BUT IS IT</span> <span class="strike" data-i18n="BUILT FOR DIGITAL?">BUILT FOR DIGITAL?</span> <span class="acid mono" data-i18n="NO.">NO.</span></p>
     </div>
 
-    <p class="intro-copy reveal">Most businesses have Instagram, Facebook and WhatsApp. Visualiza+ connects the pieces into one professional digital system.</p>
+    <p class="intro-copy reveal" data-i18n="Most businesses have Instagram, Facebook and WhatsApp. Visualiza+ connects the pieces into one professional digital system.">Most businesses have Instagram, Facebook and WhatsApp. Visualiza+ connects the pieces into one professional digital system.</p>
   </section>
 
   <!-- ============ SERVICES ============ -->
   <section class="services section" id="services">
     <div class="sec-meta reveal">
-      <span class="mono">02 / WHAT WE BUILD</span>
-      <span class="mono">( 06 SYSTEMS )</span>
+      <span class="mono">02 / <span data-i18n="WHAT WE BUILD">WHAT WE BUILD</span></span>
+      <span class="mono">( 06 <span data-i18n="SYSTEMS">SYSTEMS</span> )</span>
     </div>
 
     <div class="services-grid">
       <div class="services-intro reveal">
-        <h2 class="services-heading">WHAT WE <span class="outline">BUILD</span></h2>
-        <p class="services-blurb">Not templates. Not brochures. Six disciplines that plug into one system — your digital infrastructure, engineered end to end.</p>
-        <div class="services-scan mono">HOVER THE INDEX —</div>
+        <h2 class="services-heading"><span data-i18n="WHAT WE">WHAT WE</span> <span class="outline" data-i18n="BUILD">BUILD</span></h2>
+        <p class="services-blurb" data-i18n="Not templates. Not brochures. Six disciplines that plug into one system — your digital infrastructure, engineered end to end.">Not templates. Not brochures. Six disciplines that plug into one system — your digital infrastructure, engineered end to end.</p>
+        <div class="services-scan mono" data-i18n="HOVER THE INDEX —">HOVER THE INDEX —</div>
       </div>
 
       <div class="services-list" id="servicesList">
         <div class="svc-row" data-hover data-idx="01">
           <span class="svc-num">01</span>
-          <h3 class="svc-name">WEBSITES</h3>
-          <p class="svc-desc">Marketing sites engineered for conversion, speed and identity. Built to make your business look the part.</p>
-          <span class="svc-tags mono">identity · performance · conversion</span>
+          <h3 class="svc-name" data-i18n="WEBSITES">WEBSITES</h3>
+          <p class="svc-desc" data-i18n="Marketing sites engineered for conversion, speed and identity. Built to make your business look the part.">Marketing sites engineered for conversion, speed and identity. Built to make your business look the part.</p>
+          <span class="svc-tags mono" data-i18n="identity · performance · conversion">identity · performance · conversion</span>
           <span class="svc-arrow">↗</span>
         </div>
         <div class="svc-row" data-hover data-idx="02">
           <span class="svc-num">02</span>
-          <h3 class="svc-name">BUSINESS EMAIL</h3>
-          <p class="svc-desc">Professional email on your own domain. @yourcompany — real infrastructure, not a Gmail address.</p>
-          <span class="svc-tags mono">domain · @brand · deliverability</span>
+          <h3 class="svc-name" data-i18n="BUSINESS EMAIL">BUSINESS EMAIL</h3>
+          <p class="svc-desc" data-i18n="Professional email on your own domain. @yourcompany — real infrastructure, not a Gmail address.">Professional email on your own domain. @yourcompany — real infrastructure, not a Gmail address.</p>
+          <span class="svc-tags mono" data-i18n="domain · @brand · deliverability">domain · @brand · deliverability</span>
           <span class="svc-arrow">↗</span>
         </div>
         <div class="svc-row" data-hover data-idx="03">
           <span class="svc-num">03</span>
-          <h3 class="svc-name">LANDING PAGES</h3>
-          <p class="svc-desc">High-converting pages for launches, campaigns and offers. Designed to turn attention into action.</p>
-          <span class="svc-tags mono">launches · campaigns · offers</span>
+          <h3 class="svc-name" data-i18n="LANDING PAGES">LANDING PAGES</h3>
+          <p class="svc-desc" data-i18n="High-converting pages for launches, campaigns and offers. Designed to turn attention into action.">High-converting pages for launches, campaigns and offers. Designed to turn attention into action.</p>
+          <span class="svc-tags mono" data-i18n="launches · campaigns · offers">launches · campaigns · offers</span>
           <span class="svc-arrow">↗</span>
         </div>
         <div class="svc-row" data-hover data-idx="04">
           <span class="svc-num">04</span>
-          <h3 class="svc-name">AUTOMATION</h3>
-          <p class="svc-desc">Workflows that handle the repetitive work — leads, follow-ups, invoicing and data — automatically.</p>
-          <span class="svc-tags mono">workflows · follow-up · data</span>
+          <h3 class="svc-name" data-i18n="AUTOMATION">AUTOMATION</h3>
+          <p class="svc-desc" data-i18n="Workflows that handle the repetitive work — leads, follow-ups, invoicing and data — automatically.">Workflows that handle the repetitive work — leads, follow-ups, invoicing and data — automatically.</p>
+          <span class="svc-tags mono" data-i18n="workflows · follow-up · data">workflows · follow-up · data</span>
           <span class="svc-arrow">↗</span>
         </div>
         <div class="svc-row" data-hover data-idx="05">
           <span class="svc-num">05</span>
-          <h3 class="svc-name">CRM &amp; SYSTEMS</h3>
-          <p class="svc-desc">Customer relationships structured in one system. Every contact, every deal, every message tracked.</p>
-          <span class="svc-tags mono">pipeline · contacts · insights</span>
+          <h3 class="svc-name" data-i18n="CRM & SYSTEMS">CRM &amp; SYSTEMS</h3>
+          <p class="svc-desc" data-i18n="Customer relationships structured in one system. Every contact, every deal, every message tracked.">Customer relationships structured in one system. Every contact, every deal, every message tracked.</p>
+          <span class="svc-tags mono" data-i18n="pipeline · contacts · insights">pipeline · contacts · insights</span>
           <span class="svc-arrow">↗</span>
         </div>
         <div class="svc-row" data-hover data-idx="06">
           <span class="svc-num">06</span>
-          <h3 class="svc-name">DIGITAL INFRASTRUCTURE</h3>
-          <p class="svc-desc">The invisible layer: domains, hosting, DNS, security and reliability. Engineered to stay online.</p>
-          <span class="svc-tags mono">domains · hosting · security</span>
+          <h3 class="svc-name" data-i18n="DIGITAL INFRASTRUCTURE">DIGITAL INFRASTRUCTURE</h3>
+          <p class="svc-desc" data-i18n="The invisible layer: domains, hosting, DNS, security and reliability. Engineered to stay online.">The invisible layer: domains, hosting, DNS, security and reliability. Engineered to stay online.</p>
+          <span class="svc-tags mono" data-i18n="domains · hosting · security">domains · hosting · security</span>
           <span class="svc-arrow">↗</span>
         </div>
       </div>
@@ -216,32 +220,27 @@
   <section class="statement" id="statement">
     <div class="statement-pin">
       <div class="statement-a" id="stA">
-        <div class="statement-line"><div class="js-lines">WE DON'T JUST</div></div>
-        <div class="statement-line"><div class="js-lines">BUILD WEBSITES.</div><span class="stamp" aria-hidden="true">NO.</span></div>
+        <div class="statement-line"><div class="js-lines" data-i18n="WE DON'T JUST">WE DON'T JUST</div></div>
+        <div class="statement-line"><div class="js-lines" data-i18n="BUILD WEBSITES.">BUILD WEBSITES.</div><span class="stamp" aria-hidden="true">NO.</span></div>
       </div>
       <div class="statement-b" id="stB">
-        <div class="statement-line"><div class="js-lines">WE BUILD</div></div>
-        <div class="statement-line"><div class="js-lines"><em>DIGITAL SYSTEMS.</em></div></div>
+        <div class="statement-line"><div class="js-lines" data-i18n="WE BUILD">WE BUILD</div></div>
+        <div class="statement-line"><div class="js-lines"><em data-i18n="DIGITAL SYSTEMS.">DIGITAL SYSTEMS.</em></div></div>
       </div>
-      </div>
-      <div class="statement-b" id="stB">
-        <div class="statement-line js-lines">WE BUILD</div>
-        <div class="statement-line js-lines"><em>DIGITAL SYSTEMS.</em></div>
-      </div>
-      <div class="statement-bg" aria-hidden="true">SYSTEM</div>
+      <div class="statement-bg" aria-hidden="true" data-i18n="SYSTEM">SYSTEM</div>
     </div>
   </section>
 
   <!-- ============ SOLUTIONS ============ -->
   <section class="solutions section" id="solutions">
     <div class="sec-meta reveal">
-      <span class="mono">03 / SOLUTIONS</span>
-      <span class="mono">( 04 INDUSTRIES )</span>
+      <span class="mono">03 / <span data-i18n="SOLUTIONS">SOLUTIONS</span></span>
+      <span class="mono">( 04 <span data-i18n="INDUSTRIES">INDUSTRIES</span> )</span>
     </div>
 
     <h2 class="solutions-heading reveal">
-      <span class="line-wrap"><span class="js-lines">BUILT FOR</span></span>
-      <span class="line-wrap"><span class="js-lines" data-d="140"><em>YOUR INDUSTRY</em></span></span>
+      <span class="line-wrap"><span class="js-lines" data-i18n="BUILT FOR">BUILT FOR</span></span>
+      <span class="line-wrap"><span class="js-lines" data-d="140"><em data-i18n="YOUR INDUSTRY">YOUR INDUSTRY</em></span></span>
     </h2>
 
     <div class="sol-list">
@@ -249,13 +248,13 @@
       <article class="sol" data-hover data-px="0.06">
         <div class="sol-copy reveal">
           <span class="sol-num mono">01</span>
-          <h3 class="sol-title">REAL ESTATE</h3>
+          <h3 class="sol-title" data-i18n="REAL ESTATE">REAL ESTATE</h3>
           <ul class="sol-points mono">
-            <li>website + listings</li>
-            <li>leads + whatsapp</li>
-            <li>crm</li>
+            <li data-i18n="website + listings">website + listings</li>
+            <li data-i18n="leads + whatsapp">leads + whatsapp</li>
+            <li data-i18n="crm">crm</li>
           </ul>
-          <a class="sol-link mono" href="#cta">VIEW SYSTEM ↗</a>
+          <a class="sol-link mono" href="prototypes/real-estate.html" data-hover><span data-i18n="VIEW SYSTEM">VIEW SYSTEM</span> ↗</a>
         </div>
         <div class="sol-visual reveal" data-px="-0.08">
           <div class="svg-skyscraper" aria-hidden="true"></div>
@@ -265,13 +264,13 @@
       <article class="sol sol-rev" data-hover data-px="0.05">
         <div class="sol-copy reveal">
           <span class="sol-num mono">02</span>
-          <h3 class="sol-title">HOSPITALITY</h3>
+          <h3 class="sol-title" data-i18n="HOSPITALITY">HOSPITALITY</h3>
           <ul class="sol-points mono">
-            <li>website + booking</li>
-            <li>business email</li>
-            <li>whatsapp</li>
+            <li data-i18n="website + booking">website + booking</li>
+            <li data-i18n="business email">business email</li>
+            <li data-i18n="whatsapp">whatsapp</li>
           </ul>
-          <a class="sol-link mono" href="#cta">VIEW SYSTEM ↗</a>
+          <a class="sol-link mono" href="prototypes/hospitality.html" data-hover><span data-i18n="VIEW SYSTEM">VIEW SYSTEM</span> ↗</a>
         </div>
         <div class="sol-visual reveal" data-px="0.09">
           <div class="svg-radar" aria-hidden="true"></div>
@@ -281,13 +280,13 @@
       <article class="sol" data-hover data-px="0.07">
         <div class="sol-copy reveal">
           <span class="sol-num mono">03</span>
-          <h3 class="sol-title">CLINICS</h3>
+          <h3 class="sol-title" data-i18n="CLINICS">CLINICS</h3>
           <ul class="sol-points mono">
-            <li>website + appointments</li>
-            <li>automation</li>
-            <li>communication</li>
+            <li data-i18n="website + appointments">website + appointments</li>
+            <li data-i18n="automation">automation</li>
+            <li data-i18n="communication">communication</li>
           </ul>
-          <a class="sol-link mono" href="#cta">VIEW SYSTEM ↗</a>
+          <a class="sol-link mono" href="prototypes/clinics.html" data-hover><span data-i18n="VIEW SYSTEM">VIEW SYSTEM</span> ↗</a>
         </div>
         <div class="sol-visual reveal" data-px="-0.06">
           <div class="svg-pulse" aria-hidden="true"></div>
@@ -297,13 +296,13 @@
       <article class="sol sol-rev" data-hover data-px="0.04">
         <div class="sol-copy reveal">
           <span class="sol-num mono">04</span>
-          <h3 class="sol-title">PROFESSIONAL SERVICES</h3>
+          <h3 class="sol-title" data-i18n="PROFESSIONAL SERVICES">PROFESSIONAL SERVICES</h3>
           <ul class="sol-points mono">
-            <li>website + forms</li>
-            <li>scheduling</li>
-            <li>business email</li>
+            <li data-i18n="website + forms">website + forms</li>
+            <li data-i18n="scheduling">scheduling</li>
+            <li data-i18n="business email">business email</li>
           </ul>
-          <a class="sol-link mono" href="#cta">VIEW SYSTEM ↗</a>
+          <a class="sol-link mono" href="prototypes/professional-services.html" data-hover><span data-i18n="VIEW SYSTEM">VIEW SYSTEM</span> ↗</a>
         </div>
         <div class="sol-visual reveal" data-px="0.08">
           <div class="svg-doc" aria-hidden="true"></div>
@@ -316,8 +315,8 @@
   <!-- ============ PROCESS ============ -->
   <section class="process section" id="process">
     <div class="sec-meta reveal">
-      <span class="mono">04 / PROCESS</span>
-      <span class="mono">( THE SEQUENCE )</span>
+      <span class="mono">04 / <span data-i18n="PROCESS">PROCESS</span></span>
+      <span class="mono">( <span data-i18n="THE SEQUENCE">THE SEQUENCE</span> )</span>
     </div>
 
     <div class="process-track" id="processTrack">
@@ -325,23 +324,23 @@
 
       <div class="step reveal" data-step="0">
         <span class="step-num mono">01</span>
-        <h3 class="step-name">DISCOVER</h3>
-        <p class="step-desc">We map your business, your customers and the gaps. The system is designed before it is built.</p>
+        <h3 class="step-name" data-i18n="DISCOVER">DISCOVER</h3>
+        <p class="step-desc" data-i18n="We map your business, your customers and the gaps. The system is designed before it is built.">We map your business, your customers and the gaps. The system is designed before it is built.</p>
       </div>
       <div class="step reveal" data-step="1">
         <span class="step-num mono">02</span>
-        <h3 class="step-name">BUILD</h3>
-        <p class="step-desc">Websites, email, pages and workflows are constructed — fast, precise, on-brand.</p>
+        <h3 class="step-name" data-i18n="BUILD">BUILD</h3>
+        <p class="step-desc" data-i18n="Websites, email, pages and workflows are constructed — fast, precise, on-brand.">Websites, email, pages and workflows are constructed — fast, precise, on-brand.</p>
       </div>
       <div class="step reveal" data-step="2">
         <span class="step-num mono">03</span>
-        <h3 class="step-name">CONNECT</h3>
-        <p class="step-desc">Everything is wired together: forms, WhatsApp, CRM, analytics. One system, no leaks.</p>
+        <h3 class="step-name" data-i18n="CONNECT">CONNECT</h3>
+        <p class="step-desc" data-i18n="Everything is wired together: forms, WhatsApp, CRM, analytics. One system, no leaks.">Everything is wired together: forms, WhatsApp, CRM, analytics. One system, no leaks.</p>
       </div>
       <div class="step reveal" data-step="3">
         <span class="step-num mono">04</span>
-        <h3 class="step-name">GROW</h3>
-        <p class="step-desc">We maintain, measure and evolve the system. Your digital business keeps compounding.</p>
+        <h3 class="step-name" data-i18n="GROW">GROW</h3>
+        <p class="step-desc" data-i18n="We maintain, measure and evolve the system. Your digital business keeps compounding.">We maintain, measure and evolve the system. Your digital business keeps compounding.</p>
       </div>
     </div>
   </section>
@@ -350,29 +349,83 @@
   <section class="cta section" id="cta">
     <div class="cta-grid-bg" aria-hidden="true"></div>
     <div class="sec-meta reveal">
-      <span class="mono">05 / LET'S GO</span>
-      <span class="mono">( NO TEMPLATES )</span>
+      <span class="mono">05 / <span data-i18n="LET'S GO">LET'S GO</span></span>
+      <span class="mono">( <span data-i18n="NO TEMPLATES">NO TEMPLATES</span> )</span>
     </div>
 
     <h2 class="cta-title">
-      <span class="line-wrap"><span class="js-lines">READY TO BUILD</span></span>
-      <span class="line-wrap"><span class="js-lines" data-d="100">YOUR BUSINESS</span></span>
-      <span class="line-wrap"><span class="js-lines" data-d="200"><em>FOR DIGITAL?</em></span></span>
+      <span class="line-wrap"><span class="js-lines" data-i18n="READY TO BUILD">READY TO BUILD</span></span>
+      <span class="line-wrap"><span class="js-lines" data-d="100" data-i18n="YOUR BUSINESS">YOUR BUSINESS</span></span>
+      <span class="line-wrap"><span class="js-lines" data-d="200"><em data-i18n="FOR DIGITAL?">FOR DIGITAL?</em></span></span>
     </h2>
 
     <div class="cta-actions reveal" data-d="100">
-      <a class="btn btn-primary btn-big" href="mailto:hello@visualiza.plus" data-hover>
-        START A PROJECT <span class="arr">→</span>
-      </a>
-      <a class="btn btn-ghost btn-big" href="https://wa.me/" data-hover>
-        WHATSAPP US <span class="arr">→</span>
+      <button type="button" class="btn btn-primary btn-big" data-open-modal data-hover>
+        <span data-i18n="START A PROJECT">START A PROJECT</span> <span class="arr">→</span>
+      </button>
+      <a class="btn btn-ghost btn-big" href="https://wa.me/+258879771024" data-hover target="_blank" rel="noopener">
+        <span data-i18n="WHATSAPP US">WHATSAPP US</span> <span class="arr">→</span>
       </a>
     </div>
 
-    <p class="cta-note mono reveal">WE REPLY WITHIN 24H — USUALLY FASTER.</p>
+    <p class="cta-note mono reveal" data-i18n="WE REPLY WITHIN 24H — USUALLY FASTER.">WE REPLY WITHIN 24H — USUALLY FASTER.</p>
   </section>
 
 </main>
+
+<!-- ============ FLOATING CTA ============ -->
+<button type="button" class="floating-cta" data-open-modal aria-label="Get in touch">
+  <span data-i18n="GET IN TOUCH">GET IN TOUCH</span> <i>→</i>
+</button>
+
+<!-- ============ GET IN TOUCH MODAL ============ -->
+<div class="modal-wrap" id="modalWrap" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Get in touch">
+    <button type="button" class="modal-close" data-close-modal aria-label="Close">✕</button>
+    <div class="modal-meta mono">// VISUALIZA+ — <span data-i18n="PROJECT INTAKE">PROJECT INTAKE</span></div>
+    <h3 class="modal-title" data-i18n="GET IN TOUCH">GET IN TOUCH</h3>
+    <p class="modal-sub" data-i18n="Tell us what you need. We reply on WhatsApp within 24 hours.">Tell us what you need. We reply on WhatsApp within 24 hours.</p>
+
+    <form class="modal-form" id="contactForm" novalidate>
+      <div class="field">
+        <label class="field-label" for="fType" data-i18n="PROJECT TYPE">PROJECT TYPE</label>
+        <select id="fType" name="type">
+          <option value="Website" data-i18n="WEBSITE">WEBSITE</option>
+          <option value="Business email" data-i18n="BUSINESS EMAIL">BUSINESS EMAIL</option>
+          <option value="Landing page" data-i18n="LANDING PAGE">LANDING PAGE</option>
+          <option value="Automation" data-i18n="AUTOMATION">AUTOMATION</option>
+          <option value="CRM / System" data-i18n="CRM / SYSTEM">CRM / SYSTEM</option>
+          <option value="Full digital system" data-i18n="FULL DIGITAL SYSTEM">FULL DIGITAL SYSTEM</option>
+          <option value="Something else" data-i18n="SOMETHING ELSE">SOMETHING ELSE</option>
+        </select>
+      </div>
+      <div class="field">
+        <label class="field-label" for="fName" data-i18n="YOUR NAME">YOUR NAME</label>
+        <input type="text" id="fName" name="name" autocomplete="name" placeholder="Full name" data-i18n-attr="placeholder|Full name">
+      </div>
+      <div class="field">
+        <label class="field-label" for="fEmail" data-i18n="EMAIL">EMAIL</label>
+        <input type="email" id="fEmail" name="email" autocomplete="email" placeholder="you@company.com" data-i18n-attr="placeholder|you@company.com">
+      </div>
+      <div class="field">
+        <label class="field-label" for="fWhats" data-i18n="WHATSAPP">WHATSAPP</label>
+        <input type="tel" id="fWhats" name="whatsapp" autocomplete="tel" placeholder="+258 …" data-i18n-attr="placeholder|+258 …">
+      </div>
+      <div class="field">
+        <label class="field-label" for="fDetails" data-i18n="PROJECT DETAILS">PROJECT DETAILS</label>
+        <textarea id="fDetails" name="details" rows="3" placeholder="A few lines about your project…" data-i18n-attr="placeholder|A few lines about your project…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary modal-submit">
+        <span data-i18n="SEND VIA WHATSAPP">SEND VIA WHATSAPP</span> <span class="arr">→</span>
+      </button>
+      <button type="button" class="btn btn-ghost modal-submit" id="sendEmailBtn">
+        <span data-i18n="SEND VIA EMAIL">SEND VIA EMAIL</span> <span class="arr">→</span>
+      </button>
+      <p class="modal-note mono" data-i18n="WHATSAPP +258 87 977 1024">WHATSAPP +258 87 977 1024</p>
+    </form>
+  </div>
+</div>
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer" id="footer">
@@ -380,34 +433,34 @@
     <span class="footer-plus">+</span>
     <span class="footer-word">VISUALIZA<span class="acid">+</span></span>
   </div>
-  <p class="footer-tagline reveal">Your business, built for digital.</p>
+  <p class="footer-tagline reveal" data-i18n="Your business, built for digital.">Your business, built for digital.</p>
 
   <div class="footer-grid">
     <div class="footer-col">
-      <h4 class="mono">MENU</h4>
-      <a href="#solutions" data-hover>SOLUTIONS</a>
-      <a href="#services" data-hover>WORK</a>
-      <a href="#intro" data-hover>ABOUT</a>
-      <a href="#cta" data-hover>CONTACT</a>
+      <h4 class="mono" data-i18n="MENU">MENU</h4>
+      <a href="#solutions" data-hover><span data-i18n="SOLUTIONS">SOLUTIONS</span></a>
+      <a href="#services" data-hover><span data-i18n="WORK">WORK</span></a>
+      <a href="#intro" data-hover><span data-i18n="ABOUT">ABOUT</span></a>
+      <button type="button" data-open-modal data-hover><span data-i18n="CONTACT">CONTACT</span></button>
     </div>
     <div class="footer-col">
-      <h4 class="mono">SYSTEMS</h4>
-      <a href="#services" data-hover>WEBSITES</a>
-      <a href="#services" data-hover>EMAIL</a>
-      <a href="#services" data-hover>AUTOMATION</a>
-      <a href="#services" data-hover>CRM</a>
+      <h4 class="mono" data-i18n="SYSTEMS">SYSTEMS</h4>
+      <a href="#services" data-hover><span data-i18n="WEBSITES">WEBSITES</span></a>
+      <a href="#services" data-hover><span data-i18n="EMAIL">EMAIL</span></a>
+      <a href="#services" data-hover><span data-i18n="AUTOMATION">AUTOMATION</span></a>
+      <a href="#services" data-hover><span data-i18n="CRM">CRM</span></a>
     </div>
     <div class="footer-col">
-      <h4 class="mono">CONTACT</h4>
+      <h4 class="mono" data-i18n="CONTACT">CONTACT</h4>
       <a href="mailto:hello@visualiza.plus" data-hover>HELLO@VISUALIZA.PLUS</a>
-      <a href="https://wa.me/" data-hover>WHATSAPP</a>
+      <a href="https://wa.me/+258879771024" data-hover target="_blank" rel="noopener">WHATSAPP</a>
       <span class="mono dim">© 2026 VISUALIZA+</span>
     </div>
   </div>
 
   <div class="footer-base">
-    <span class="mono">VISUALIZA+ — DIGITAL INFRASTRUCTURE</span>
-    <a class="mono" href="#hero" data-hover>BACK TO TOP ↑</a>
+    <span class="mono">VISUALIZA+ — <span data-i18n="DIGITAL INFRASTRUCTURE">DIGITAL INFRASTRUCTURE</span></span>
+    <a class="mono" href="#hero" data-hover><span data-i18n="BACK TO TOP">BACK TO TOP</span> ↑</a>
   </div>
 </footer>
 
