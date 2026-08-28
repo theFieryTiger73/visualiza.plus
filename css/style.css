@@ -798,11 +798,11 @@ body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
   gap: 2rem; margin-top: clamp(3rem, 8vw, 6rem);
   padding-top: 2rem; border-top: 1px solid var(--line);
 }
-.footer-col { display: flex; flex-direction: column; gap: 0.7rem; }
+.footer-col { display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; }
 .footer-col h4 { font-size: 0.7rem; letter-spacing: 0.2em; color: var(--dim); margin-bottom: 0.4rem; }
 .footer-col a {
   font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em;
-  width: max-content; position: relative;
+  width: max-content; max-width: 100%; position: relative;
 }
 .footer-col a::after {
   content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 100%;
@@ -812,7 +812,7 @@ body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
 .footer-col a:hover::after { transform: scaleX(1); transform-origin: left; }
 .footer-col button {
   font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em;
-  width: max-content; position: relative; text-transform: none;
+  width: max-content; max-width: 100%; position: relative; text-transform: none;
 }
 .footer-col button::after {
   content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 100%;
@@ -825,6 +825,14 @@ body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
   margin-top: clamp(3rem, 8vw, 5rem);
   padding-top: 1.4rem; border-top: 1px solid var(--line);
   font-size: 0.66rem; letter-spacing: 0.14em; color: var(--dim);
+}
+
+/* ==========================================================================
+   ACCESSIBILITY
+   ========================================================================== */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
 /* ==========================================================================
@@ -916,12 +924,12 @@ body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
   padding: clamp(4rem, 9vw, 8rem) clamp(1.2rem, 5vw, 5rem); text-align: center;
   border-top: 1px solid var(--line-strong); position: relative; overflow: hidden;
 }
-.proto-cta h3 {
+.proto-cta h2 {
   font-family: var(--font-display); font-weight: 400;
   font-size: clamp(2.2rem, 6vw, 5rem); text-transform: uppercase; line-height: 0.95;
   margin-bottom: 2rem;
 }
-.proto-cta h3 em { font-style: normal; color: var(--acid); }
+.proto-cta h2 em { font-style: normal; color: var(--acid); }
 
 @media (max-width: 720px) {
   .proto-kpis { grid-template-columns: repeat(2, 1fr); }

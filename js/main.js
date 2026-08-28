@@ -241,7 +241,13 @@
   var VZ_I18N = {
     en: {
       "VISUALIZA+ — Your business, built for digital.": "VISUALIZA+ — Your business, built for digital.",
+      "Visualiza+ | Digital Solutions & Website Development in Mozambique": "Visualiza+ | Digital Solutions & Website Development in Mozambique",
+      "Real Estate Website & CRM System in Mozambique | Visualiza+": "Real Estate Website & CRM System in Mozambique | Visualiza+",
+      "Hotel & Hospitality Booking System in Mozambique | Visualiza+": "Hotel & Hospitality Booking System in Mozambique | Visualiza+",
+      "Clinic Website & Appointment System in Mozambique | Visualiza+": "Clinic Website & Appointment System in Mozambique | Visualiza+",
+      "Professional Services Website & Scheduling System | Visualiza+": "Professional Services Website & Scheduling System | Visualiza+",
       "Visualiza+ builds digital infrastructure for businesses — websites, domains, business email, landing pages, automation, CRM and custom digital systems.": "Visualiza+ builds digital infrastructure for businesses — websites, domains, business email, landing pages, automation, CRM and custom digital systems.",
+      "Visualiza+ builds professional websites, business email, automation and digital systems for businesses in Mozambique.": "Visualiza+ builds professional websites, business email, automation and digital systems for businesses in Mozambique.",
       "INTRO": "INTRO",
       "SERVICES": "SERVICES",
       "SOLUTIONS": "SOLUTIONS",
@@ -296,6 +302,7 @@
       "domains · hosting · security": "domains · hosting · security",
       "WE DON'T JUST": "WE DON'T JUST",
       "BUILD WEBSITES.": "BUILD WEBSITES.",
+      "We build digital systems, not just websites.": "We build digital systems, not just websites.",
       "WE BUILD": "WE BUILD",
       "DIGITAL SYSTEMS.": "DIGITAL SYSTEMS.",
       "INDUSTRIES": "INDUSTRIES",
@@ -446,7 +453,13 @@
     },
     pt: {
       "VISUALIZA+ — Your business, built for digital.": "VISUALIZA+ — O seu negócio, construído para o digital.",
+      "Visualiza+ | Digital Solutions & Website Development in Mozambique": "Visualiza+ | Soluções Digitais e Desenvolvimento de Websites em Moçambique",
+      "Real Estate Website & CRM System in Mozambique | Visualiza+": "Website e CRM Imobiliário em Moçambique | Visualiza+",
+      "Hotel & Hospitality Booking System in Mozambique | Visualiza+": "Sistema de Reservas Hoteleiras em Moçambique | Visualiza+",
+      "Clinic Website & Appointment System in Mozambique | Visualiza+": "Website e Marcações para Clínicas em Moçambique | Visualiza+",
+      "Professional Services Website & Scheduling System | Visualiza+": "Website e Agendamento para Serviços Profissionais | Visualiza+",
       "Visualiza+ builds digital infrastructure for businesses — websites, domains, business email, landing pages, automation, CRM and custom digital systems.": "A Visualiza+ constrói infraestrutura digital para negócios — websites, domínios, email profissional, landing pages, automação, CRM e sistemas digitais personalizados.",
+      "Visualiza+ builds professional websites, business email, automation and digital systems for businesses in Mozambique.": "A Visualiza+ constrói websites profissionais, email empresarial, automação e sistemas digitais para empresas em Moçambique.",
       "INTRO": "INTRO",
       "SERVICES": "SERVIÇOS",
       "SOLUTIONS": "SOLUÇÕES",
@@ -501,6 +514,7 @@
       "domains · hosting · security": "domínios · alojamento · segurança",
       "WE DON'T JUST": "NÃO FAZEMOS APENAS",
       "BUILD WEBSITES.": "SITES.",
+      "We build digital systems, not just websites.": "Construímos sistemas digitais, não apenas websites.",
       "WE BUILD": "CONSTRUÍMOS",
       "DIGITAL SYSTEMS.": "SISTEMAS DIGITAIS.",
       "INDUSTRIES": "SETORES",
@@ -674,7 +688,9 @@
         if (dict[key] !== undefined) el.setAttribute(attr, dict[key]);
       });
       buttons.forEach(function (b) {
-        b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+        var active = b.getAttribute("data-lang") === lang;
+        b.classList.toggle("active", active);
+        b.setAttribute("aria-pressed", active ? "true" : "false");
       });
     };
     var current = "en";
