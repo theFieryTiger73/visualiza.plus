@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://visualizaplus.vercel.app/sitemap.xml
+Sitemap: https://visualizaplus.com/sitemap.xml
