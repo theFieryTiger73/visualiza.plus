@@ -77,6 +77,82 @@
     update();
   })();
 
+  /* ---------- mobile menu ---------- */
+  (function mobileMenu() {
+    var burger = document.getElementById("navBurger");
+    if (!burger) return;
+
+    var overlay = document.getElementById("mnav");
+    if (!overlay) {
+      var div = document.createElement("div");
+      div.className = "mnav";
+      div.id = "mnav";
+      div.setAttribute("aria-hidden", "true");
+      div.setAttribute("aria-label", "Menu");
+      div.innerHTML =
+        '<div class="mnav-inner">' +
+          '<div class="mnav-head"></div>' +
+          '<div class="mnav-label" data-i18n="MENU">MENU</div>' +
+          '<nav class="mnav-links" aria-label="Mobile"></nav>' +
+          '<div class="mnav-foot">' +
+            '<button type="button" class="btn btn-primary mnav-cta" data-open-modal><span data-i18n="START A PROJECT">START A PROJECT</span> <span class="arr">→</span></button>' +
+          '</div>' +
+        '</div>';
+      document.body.appendChild(div);
+      overlay = div;
+      var closeBtn = document.createElement("button");
+      closeBtn.type = "button";
+      closeBtn.className = "mnav-close";
+      closeBtn.setAttribute("aria-label", "Close menu");
+      closeBtn.textContent = "✕";
+      overlay.querySelector(".mnav-head").appendChild(closeBtn);
+    }
+
+    var brandSrc = document.querySelector(".nav .nav-brand");
+    var head = overlay.querySelector(".mnav-head");
+    if (brandSrc) head.insertBefore(brandSrc.cloneNode(true), head.firstChild);
+
+    var target = overlay.querySelector(".mnav-links");
+    var source = document.querySelector(".nav .nav-links");
+    if (source && target) {
+      source.querySelectorAll("a").forEach(function (a) {
+        var c = a.cloneNode(true);
+        c.addEventListener("click", close);
+        target.appendChild(c);
+      });
+    }
+
+    var cta = overlay.querySelector(".mnav-cta");
+    if (cta) cta.addEventListener("click", close);
+    var closeBtn = overlay.querySelector(".mnav-close");
+    if (closeBtn) closeBtn.addEventListener("click", close);
+
+    function open() {
+      overlay.classList.add("open");
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.classList.add("mnav-open");
+      burger.setAttribute("aria-expanded", "true");
+      burger.setAttribute("aria-label", "Close menu");
+    }
+    function close() {
+      overlay.classList.remove("open");
+      overlay.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("mnav-open");
+      burger.setAttribute("aria-expanded", "false");
+      burger.setAttribute("aria-label", "Menu");
+    }
+
+    burger.addEventListener("click", function () {
+      if (overlay.classList.contains("open")) close(); else open();
+    });
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) close();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && overlay.classList.contains("open")) close();
+    });
+  })();
+
   /* ---------- reveal observer ---------- */
   (function reveals() {
     var io;
@@ -139,6 +215,7 @@
     var stamp = document.querySelector(".stamp");
     var section = document.getElementById("statement");
     if (!pin || !stA || !stB) return;
+    if (window.innerWidth < 901) return;
 
     var stampDone = false;
     function update() {
@@ -168,6 +245,7 @@
     var ghost = document.getElementById("ghost");
     var list = document.getElementById("servicesList");
     if (!ghost || !list) return;
+    if (window.innerWidth < 901) return;
 
     list.addEventListener("mouseover", function (e) {
       var row = e.target.closest(".svc-row");
@@ -193,6 +271,7 @@
   /* ---------- solutions parallax ---------- */
   (function parallax() {
     if (reduced) return;
+    if (window.innerWidth < 901) return;
     var visuals = document.querySelectorAll(".sol-visual");
     if (!("IntersectionObserver" in window)) return;
     var io = new IntersectionObserver(function (entries) {
@@ -224,6 +303,7 @@
     var track = document.getElementById("processTrack");
     var line = document.getElementById("processLine");
     if (!track || !line) return;
+    if (window.innerWidth < 901) { line.style.width = "100%"; return; }
     if (reduced) { line.style.width = "100%"; return; }
     if (!("IntersectionObserver" in window)) { line.style.width = "100%"; return; }
     var io = new IntersectionObserver(function (entries) {
